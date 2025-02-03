@@ -1,4 +1,4 @@
-# “Comece Aqui” - Bem-vindo ao Projeto da Organização Uninter
+# “Comece Aqui” - Bem-vindo ao Projeto da Uninter
 
 Seja bem-vindo(a) ao repositório inicial da nossa organização colaborativa de projetos da Uninter! Este repositório tem como objetivo servir de ponto de partida para todos os membros, fornecendo diretrizes, informações básicas sobre o projeto e como contribuir.
 
