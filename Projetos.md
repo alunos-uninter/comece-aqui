@@ -6,13 +6,39 @@ Este repositório é dedicado aos projetos colaborativos dos estudantes de Ciên
 
 ### 📱 Mobile  
 
-#### **Aplicativo de Rede Social**  
-Líder do Projeto (01/02/2025 - 23/07/2025): Rafael Sobrenome  
+#### **Tap Tap Tartaruga**  
+Líder do Projeto: Marcelo Viana
+
+##### **Objetivo**  
+Desenvolver um aplicativo gerador de renda com as seguintes funcionalidades:
+- Toque para ganhar mais pontos.
+- Rode anúncios para ganhar dinheiro.
+- Banner de anúncio para maximizar a renda. 
 
 ##### **Participantes**  
-- Marcelo  
-- Rafael  
-- (outros)  
+
+
+##### **Roadmap**  
+- [ ] Contador de pontos.
+- [ ] Imagem central.
+- [ ] Anúncio em vídeo.
+- [ ] Anúncio em banner.
+- [ ] Publicar na Play Store  
+- [ ] Publicar na App Store
+
+##### **Referências**  
+- [Aplicativo na Loja](#) (Ainda não publicado)
+- [Repositório](#)  
+- [Redes Sociais do Projeto](#) (Ainda não publicado)
+
+##### **Tecnologias Utilizadas**  
+- Flutter/Dart   
+- AdMob
+
+---
+
+#### **Aplicativo de Rede Social**  
+Líder do Projeto: Rafael   
 
 ##### **Objetivo**  
 Desenvolver um aplicativo de rede social com features como:  
@@ -20,6 +46,9 @@ Desenvolver um aplicativo de rede social com features como:
 - Comentários e curtidas  
 - Compartilhamento de conteúdo  
 - Adicionar amigos  
+
+##### **Participantes**  
+
 
 ##### **Roadmap**  
 - [x] Publicar foto  
