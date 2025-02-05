@@ -20,38 +20,6 @@ Buscamos incentivar a troca de conhecimentos, a aplicação de boas práticas de
 
 Acesse a [**Lista dos Projetos em Andamento**](https://github.com/alunos-uninter/comece-aqui/blob/main/Projetos.md) ou [**participe das discussões**](https://github.com/orgs/alunos-uninter/discussions).
 
-## 📚 Como Contribuir
-
-Siga as etapas abaixo para começar a contribuir com o projeto:
-
-1. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/organizacao/comece-aqui.git
-   ```
-2. **Instale as dependências:** Verifique os requisitos do repositório que deseja colaborar (mobile, backend ou web).
-3. **Leia as regras de contribuição:** Certifique-se de seguir os padrões definidos.
-4. **Implemente a sua ideia:**
-   - Crie uma branch:
-     ```bash
-     git checkout -b minha-feature
-     ```
-   - Adicione suas modificações e faça commit.
-   ```bash
-   git commit -m "Descrição da alteração"
-   ```
-   - Envie a branch:
-   ```bash
-   git push origin minha-feature
-   ```
-5. **Abra um Pull Request:** Siga o fluxo de revisão para que sua contribuição seja integrada.
-
-## 🔨 Configuração do Ambiente
-
-1. Certifique-se de ter o [Git](https://git-scm.com/) instalado.
-2. Para o módulo mobile, instale o [Flutter](https://flutter.dev/).
-3. Para backend, certifique-se de ter o [Node.js](https://nodejs.org/) configurado.
-4. Instale qualquer dependência listada em cada repositório.
-
 ## ✅ Regras de Contribuição
 
 - **Padrões de Código:** Seguir o estilo de código definido para cada repositório.
