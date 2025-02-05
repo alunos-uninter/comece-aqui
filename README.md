@@ -18,12 +18,7 @@ Buscamos incentivar a troca de conhecimentos, a aplicação de boas práticas de
 
 ## ⚙️ Estrutura do Projeto
 
-Abaixo estão os repositórios principais que compõem a nossa solução colaborativa:
-
-- [**Mobile**](https://github.com/organizacao/mobile) — Aplicação móvel do projeto.
-- [**Backend**](https://github.com/organizacao/backend) — Serviços de backend.
-- [**Documentação**](https://github.com/organizacao/documentacao) — Documentação detalhada dos requisitos e arquitetura.
-- [**Web**](https://github.com/organizacao/web) — Aplicação web do projeto.
+Acesse a [**Lista dos Projetos em Andamento**](https://github.com/alunos-uninter/comece-aqui/blob/main/Projetos.md) ou [**participe das discussões**](https://github.com/orgs/alunos-uninter/discussions).
 
 ## 📚 Como Contribuir
 
