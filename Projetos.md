@@ -7,7 +7,8 @@ Este repositório é dedicado aos projetos colaborativos dos estudantes de Ciên
 ### 📱 Mobile  
 
 #### **Tap Tap Tartaruga**  
-Líder do Projeto: Marcelo Viana
+Líder: Marcelo Viana
+<br> Link: [Github](https://github.com/alunos-uninter/mobile-admob/tree/main)
 
 ##### **Objetivo**  
 Desenvolver um aplicativo gerador de renda com as seguintes funcionalidades:
