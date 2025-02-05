@@ -29,7 +29,6 @@ Desenvolver um aplicativo gerador de renda com as seguintes funcionalidades:
 
 ##### **Referências**  
 - [Aplicativo na Loja](#) (Ainda não publicado)
-- [Repositório](#)  
 - [Redes Sociais do Projeto](#) (Ainda não publicado)
 
 ##### **Tecnologias Utilizadas**  
