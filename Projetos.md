@@ -2,73 +2,34 @@
 
 Este repositório é dedicado aos projetos colaborativos dos estudantes de Ciência da Computação. A ideia é organizar projetos por categorias (Mobile, Frontend, Backend, etc.) e permitir que os membros escolham em quais projetos querem participar.
 
-## 🗂️ Categorias de Projetos  
-
-### 📱 Mobile  
-
-#### **Tap Tap Tartaruga**  
-Líder: Marcelo Viana
-<br> Link: [Github](https://github.com/alunos-uninter/mobile-admob/tree/main)
-
-##### **Objetivo**  
-Desenvolver um aplicativo gerador de renda com as seguintes funcionalidades:
-- Toque para ganhar mais pontos.
-- Rode anúncios para ganhar dinheiro.
-- Banner de anúncio para maximizar a renda. 
-
-##### **Participantes**  
+# 🗂️ Projetos em andamento  
+### Sumário
+- [Mobile](#-mobile)
+- [Frontend](#-frontend) 
+- Backend (Em breve)
+- Data Science (Em breve)
+- DevOps (Em breve)
+- UI/UX (Em breve)
 
 
-##### **Roadmap**  
-- [ ] Contador de pontos.
-- [ ] Imagem central.
-- [ ] Anúncio em vídeo.
-- [ ] Anúncio em banner.
-- [ ] Publicar na Play Store  
-- [ ] Publicar na App Store
+## 📱 Mobile  
 
-##### **Referências**  
-- [Aplicativo na Loja](#) (Ainda não publicado)
-- [Redes Sociais do Projeto](#) (Ainda não publicado)
+<h3>Tap Tap Tartaruga</h3>
 
-##### **Tecnologias Utilizadas**  
-- Flutter/Dart   
-- AdMob
+> Líder: Marcelo Viana
+> <br> Framework [Flutter](https://flutter.dev)
+> <br>Link: [Github](https://github.com/alunos-uninter/mobile-admob/tree/main)
+> <p>Aplicativo gerador de renda a partir de anúncios promocionais com AdMob.</p>
 
+<h3>Aplicativo de Rede Social</h3>
+
+> Líder: Rafael
+> <br> Framework [Jetpack Compose](https://developer.android.com/jetpack/compose)
+> <br>Link: [Github](https://github.com/alunos-uninter/mobile-rede-social/tree/main)
+> <p>Aplicativo de rede social para estudantes.</p>
 ---
 
-#### **Aplicativo de Rede Social**  
-Líder do Projeto: Rafael   
-
-##### **Objetivo**  
-Desenvolver um aplicativo de rede social com features como:  
-- Postagem de imagens  
-- Comentários e curtidas  
-- Compartilhamento de conteúdo  
-- Adicionar amigos  
-
-##### **Participantes**  
-
-
-##### **Roadmap**  
-- [x] Publicar foto  
-- [ ] Publicar vídeo  
-- [ ] Comentar em postagens  
-- [x] Curtir postagens  
-- [ ] Adicionar amigos  
-
-##### **Referências**  
-- [Aplicativo na Loja](#)  
-- [Repositório](#)  
-- [Redes Sociais do Projeto](#)  
-
-##### **Tecnologias Utilizadas**  
-- Android Nativo com Kotlin  
-- iOS Nativo com Swift  
-
----
-
-### 🌐 Frontend  
+## 🌐 Frontend  
 
 #### **E-commerce Completo**  
 Líder do Projeto (dd/mm/aaaa - dd/mm/aaaa): Nome Sobrenome  
