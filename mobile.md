@@ -40,32 +40,54 @@ Caso ainda não possua esses conhecimentos, procure cursos introdutórios de Ci�
 
 ## Escolhendo a Plataforma: Android Nativo ou iOS com Swift
 
-Uma das primeiras decisões a tomar é em qual plataforma você deseja se especializar. Este roadmap sugere começar pelo desenvolvimento nativo, utilizando **Android** (com Java ou Kotlin) ou **iOS** (com Swift).
+Uma das primeiras decisões a tomar é em qual plataforma você deseja se especializar. Este roadmap sugere começar pelo desenvolvimento nativo, utilizando **Android** (com Kotlin) ou **iOS** (com Swift).
 
 ### Roadmap Android Nativo
 
-1. **Fundamentos do Android e Java/Kotlin:**
+1. **Fundamentos do Android Kotlin:**
    - Instale e configure o [Android Studio](https://developer.android.com/studio).
-   - Aprenda os conceitos básicos de **Java** ou **Kotlin** (sendo Kotlin a linguagem recomendada atualmente).
+   - Aprenda os conceitos básicos **Kotlin** (ainda é possível fazer com Java, mas limitado a UI usando XML e não é uma linguagem recomendada mais. Codigos Kotlin e Java conseguem "conversar entre si" aqui).
    - Estude a arquitetura básica do Android: Activity, Fragment, ciclo de vida, intents e recursos.
 
 2. **Desenvolvimento de Interface e Layouts:**
    - Aprenda a trabalhar com XML para criar layouts.
    - Entenda o uso de ConstraintLayout, RecyclerView, ListView, e outros componentes UI.
+   - Depois de ter estudado a base do XML: Estude Jetpack Compose, que é o framework de UI recomendado atualmente.
 
 3. **Persistência de Dados:**
-   - Conheça SQLite, Room (biblioteca ORM) e outras formas de armazenamento (SharedPreferences, DataStore).
+   - Para Bancos de Dados Simples (chave-valor):
+      1. SharedPreferences
+      2. DataStore (abstração do SharedPreferences)
+
+   - Para Bancos de Dados Simples (chave-valor), mas com criptografia:
+      1. EncryptedSharedPreferences
+
+   - Para Bancos de Dados Complexos:
+      1. SQLite (banco de dados complexo SQL nativo no Android)
+      2. Room (abstração do SQLite)
+
 
 4. **Comunicação e API REST:**
-   - Utilize bibliotecas como Retrofit para consumo de APIs.
-   - Pratique o tratamento de JSON com Gson ou Moshi.
+   - Antes de tudo: entenda o que é um JSON e qual a relação dele com a conectividade remota de um aplicativo. Entenda que Bancos de Dados Remotos geralmente recebem e enviam informações usando o padrão JSON.
+   - Entenda como é implementada as requisições HTTP nativas no ambiente Android (são usando OkHttp). Aqui você precisa entender quem é o Client HTTP e a possibilidade de adicionar interceptadores (como por exemplo de Logs).
+   - Comece a fazer requisições usando bibliotecas:
+   elas facilitam muito o desenvolvimento, tornando mais simples e rápido de escrever e fazer as requisições
+      - Utilize bibliotecas como Retrofit para consumo de APIs.
+      - Pratique o tratamento de JSON com Gson ou Moshi (Gson é o mais usado). Aqui você deve entender que está sendo feita uma 'tradução' do código de Kotlin para JSON e de JSON para Kotlin. Funciona de forma muito mágica, mas você deve entender que isto está acontecendo.
+   - Evolua nas requisições:
+      - Entenda com maior profundidade como elas funcionam substituindo o Retrofit pelo KtorClient, e esteja preparado para fazer apps que funcionam no Kotlin Multiplataforma.
+      - Substitua Serialização de JSON 'Gson' por Kotlin Serialization, e faça Encode e Decode de JSON usando recuros nativos do Kotlin, e que funcionam no Kotlin Multiplataforma.
 
 5. **Testes e Debug:**
-   - Introdução a testes unitários e instrumentados.
-   - Ferramentas de depuração e uso do Logcat.
+   - Ferramentas de depuração e uso do Logcat: aprenda a colocar Logs no código e usar breakpoints para te auxiliar a procurar erros e monitorar a execução do código
+   - Testes Unitários usando JUnit
+   - Testes de UI usando Compose UI Test (para Compose) ou Mockito para XML.
+   
 
 6. **Boas Práticas e Publicação:**
-   - Estude padrões de projeto (MVC, MVVM).
+   - Estude padrões de projeto (MVVM, MVP, MVC). No Android, o mais usado e recomendado é MVVM.
+   - Adicione a camada 'Repository' no seu projeto MVVM. O padrão Repository é amplamente usado.
+   - (Opcional) Aplique conceitos de Clean Architecture no seu Projeto MVVM com Repository Pattern: separe em Presentation, Domain e Data. Clean no Android usa apenas 3 camadas.
    - Aprenda sobre gerenciamento de versões, testes em diferentes dispositivos e publicação na Google Play Store.
 
 ### Roadmap iOS com Swift
