@@ -4,7 +4,7 @@ Se você nunca escreveu uma linha de código na vida, então essa trilha é
 definitivamente para você. Caso você já tenha uma certa experiência com
 programação e no design de algoritmos, mesmo que você talvez conheça boa parte
 dos métodos, recomendo ir direto para
-[seção de como projetar algoritmos](como-projetar-algoritmos), lá é
+[seção de como projetar algoritmos](#como-projetar-algoritmos), lá é
 explicado conceitos mais profundos no desenvolvimento de algoritmos.
 
 ## Estudar linguagem de programação não é aprender a programar
@@ -93,3 +93,17 @@ Em conceitos futuros de engenharia de software, é visto que um bom sistema de
 software possui um processo bem definido de desenvolvimento. Algo similar ocorre
 no projeto de algoritmos. Portanto nas seções a seguir, veremos uma espécie de
 receita para diferentes desafios em projeto de algoritmos.
+
+## Dados Fixos
+
+Dados são um ponto importante em qualquer algoritmo. Eles são os valores que
+serão manipulados pelo algoritmo. Eles podem ser de diferentes tipos, como
+números, strings, listas, entre outros. E claro, como são diferentes tipos de
+dados, eles podem ser manipulados de diferentes formas. Por exemplo, números
+podem ser somados, subtraídos, multiplicados e divididos, enquanto strings podem
+ser concatenadas, divididas e substituídas. De forma geral, estes tipos de dados
+são atômicos, ou seja, não podem ser divididos em partes menores.
+
+## Como projetar funções
+
+Coming Soon...
