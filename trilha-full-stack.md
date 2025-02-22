@@ -58,7 +58,6 @@
 
 </details>
 
-
 <details>
   <summary><h2>Java - Fundação</h2></summary>
 
@@ -303,12 +302,11 @@
   <summary><h2>Fundamentos do HTML</h2></summary>
 
   <details>
-    <summary>📌 Introdução ao HTML</summary>
+    <summary>📌 [Introdução ao HTML](frontend/introducao-html.md)</summary>
 
     - O que é HTML e como funciona na web.
     - Estrutura básica de um documento HTML (`<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`).
     - Diferença entre **tags de bloco** (`div`, `p`, `section`) e **tags inline** (`span`, `a`, `strong`).
-    - Criando a primeira página HTML.
 
   </details>
 
