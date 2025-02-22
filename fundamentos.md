@@ -162,7 +162,116 @@ ser um pouco massante de aplicar no algoritmo. No entanto, se você nunca fez
 algoritmos, é preferível que siga a receita a risca, dado que é necessário
 obter esta importante habilidade.
 
+### Aplicando a receita
+
+A seguir, vamos aplicar a receita para criar uma função que retorna o maior
+número entre dois valores. Se você já escreveu código, você sabe que isto é
+um problema simples, mas é importante seguir a receita para entender o processo
+completo.
+
+Vamos começar com o primeiro passo: documentar a função. Neste caso, a descrição
+do problema é mais que suficiente para servir como documentação da função.
+
+```py
+"""Dado a e b, retorne o maior valor"""
+```
+Dado essa descrição, podemos inferir duas coisas, estas essenciais para a
+solução do problema:
+1. O tipo de dados que a função deve manipular é numérico.
+2. A função deve retornar um valor numérico.
+Tendo estas observações em mente, podemos montar a definição inicial da função:
+
+```py
+# Note como a nome da função é condizente com o problema.
+# Dar nomes significativos é imprescindível para a legibilidade e manutenção
+# do código.
+def maior(a, b):
+    """Dado a e b, retorne o maior valor"""
+
+    # Retornamos 0 como valor inicial, apenas por questões de completude.
+    return 0
+```
+
+Com a implementação inicial definida, podemos então definir uma série de testes
+para validar o funcionamento da função. Ao escrever os testes, é importante
+considerar os diferentes cenários que a função testada pode encontrar. Por
+exemplo, em nosso problema proposto, temos as seguintes situações:
+
++ Quando os valores são iguais, o maior valor é o próprio valor.
++ Quando os valores são diferentes, o maior valor é o maior entre eles.
+
+Tendo isso em mente, podemos escrever os testes para validar a função. Há várias
+formas testar código[^3], mas por questões de simplicidade usaremos declarações
+`assert`.
+
+```py
+def maior(a, b):
+    """Dado a e b, retorne o maior valor"""
+
+    return 0
+
+
+assert maior(1, 2) == 2
+assert maior(27, 12) == 27
+assert maior(1, 1) == 1
+```
+
+É essencial rodarmos o código para garantir que o nosso programa está bem
+formado e funcional. Acostume-se a fazer isso sempre que escrever código, não é
+sempre que você estará seguindo a sintaxe correta. Ao executarmos o código,
+devemos verificar se todos os testes passaram. Se algum teste falhar, significa
+que há um erro no código que precisa ser corrigido.
+
+<figure>
+    <img src="fundamentos-assets/first-run.png">
+    <figcaption>
+        AssertErrror significa que a função não atendeu aos requisitos
+        esperados.
+    </figcaption>
+</figure>
+
+Após isso, podemos trabalhar na implementação da função, levando em conta,
+claro, os tipos dos valores de entrada e o que deve ser feito (documentação). O
+trabalho de escrever código para dados atômicos é relativamente simples, dado
+que já existe um conjunto de operações que podem ser usadas para computar estes
+tipos de dados. Em nosso problema, estamos trabalhando com números, portanto,
+além das operações matemáticas, podemos fazer comparações e operações lógicas.
+
+```py
+>>> 5 > 8
+False
+>>> 5 > 3
+True
+```
+
+O nosso problema requer que façamos uma comparação entre estes dados e decidamos
+se eles são iguais ou diferentes. Além disso, um diferentes resultado será
+retornado dependendo de uma condição, portanto, é mais do que claro que teremos
+que utilizar de uma declaração se-senão(if-else).
+
+```py
+def maior(a, b):
+    """Dado a e b, retorne o maior valor"""
+
+    if a > b:
+        return a
+    else:
+        return b
+
+
+assert maior(1, 2) == 2
+assert maior(27, 12) == 27
+assert maior(1, 1) == 1
+```
+
+Por fim, podemos finalmente executar os testes para garantir que a função está
+funcionando corretamente. Se estiver correto, nenhum erro será retornado.
+
+
 [^1]: [Veja como instalar o interpretador Python na sua máquina](https://www.python.org/downloads/).
 [^2]: Em aplicações do mundo real, você verá que nem todos os dados são
 convenientes para serem usados para certos contextos, por isso é muito
-importante compreender o contexto do problema
+importante compreender o contexto do problema.
+[^3]: O método preferível em situações real de produção de software é utilizar
+suítes de testes automatizadas, como o
+[`unittest`](https://docs.python.org/3/library/unittest.html) do Python.
