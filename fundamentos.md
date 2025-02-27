@@ -162,7 +162,7 @@ ser um pouco massante de aplicar no algoritmo. No entanto, se você nunca fez
 algoritmos, é preferível que siga a receita a risca, dado que é necessário
 obter esta importante habilidade.
 
-### Aplicando a receita
+### Aplicando a receita: Qual o maior número
 
 A seguir, vamos aplicar a receita para criar uma função que retorna o maior
 número entre dois valores. Se você já escreveu código, você sabe que isto é
@@ -267,6 +267,37 @@ assert maior(1, 1) == 1
 Por fim, podemos finalmente executar os testes para garantir que a função está
 funcionando corretamente. Se estiver correto, nenhum erro será retornado.
 
+### Outros tipos de dados
+
+Em seções anteriores, vimos como podemos escrever algoritmos sobre tipos de
+dados atômicos. Há outra espécie de organização de dados que utilizamos para a
+resolução de problemas mais específicos
+
+* **_Itemizações_**. Um conjunto de diferentes tipos de dados que se referem um
+determinado contexto cujo cada tipo de dado dentro da itemização possue um
+significado próprio. Porexemplo, podemos definir **StatusDaBomba** como ou um
+intervalo de números inteiros de 1 a 100 que significa tempo restante para
+explodir ou _false_ para denotar que a bomba já explodiu.
+* **_Enumerações_**. São os mais usados em designs de algoritmos pois são
+essencialmente um conjunto de valores que representa um contexto. Por exemplo,
+podemos ter uma enumeração chamada **TipoDeCarro** que possue os valores
+_SEDAN_, _SUV_, _ESPORTIVO_, _COUPE_.
+
+Como citado anteriormente, o algoritmo que escrevemos, sua estrutura, depende
+muito do tipo que estamos trabalhando, então vejamos uma série de resolução de
+problemas onde teremos de interagir com estes tipos de dados.
+
+### Itemizações
+
+Coming Soon...
+
+### Enumerações: Preço de um tipo de carro
+
+Coming Soon...
+
+### Como projetar aplicações
+
+Coming Soon...
 
 [^1]: [Veja como instalar o interpretador Python na sua máquina](https://www.python.org/downloads/).
 [^2]: Em aplicações do mundo real, você verá que nem todos os dados são
