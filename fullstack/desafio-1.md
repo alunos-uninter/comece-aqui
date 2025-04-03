@@ -14,12 +14,12 @@
 
   <h4>b. Despesas</h4>
   <ul>
-    <li>Ler custos obrigatórios (ex: aluguel, financiamentos)</li>
-    <li>Cada entrada representa um gasto variável (ex: 150.75 para mercado, 30 para Netflix)</li>
-    <li>Permitir múltiplas entradas até o usuário digitar "sair"</li>
-    <li>Acumular valores digitados</li>
-    <li>Salvar total de cada despesa</li>
-    <li>Salvar total (somar total das despesas fixas e  variáveis)</li>
+    <li>Ler custos obrigatórios (ex: 1500 para aluguel, 500 para financiamentos)</li>
+    <li>Ler gastos variáveis (ex: 150.75 para mercado, 30 para Netflix)</li>
+    <li>Permitir múltiplas entradas até o usuário digitar "sair" para obrigatórios e variáveis</li>
+    <li>Acumular valores digitados em uma variável</li>
+    <li>Salvar total de cada despesa em uma variável</li>
+    <li>Salvar total (somar total das despesas fixas e variáveis) em uma variável</li>
   </ul>
 
   <h3>2. Processamento</h3>
