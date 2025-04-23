@@ -47,7 +47,11 @@
   * WebStorm: Para desenvolvimento Front-End;
   * PhpStorm: Para desenvolvimento em PHP;
   * CLion: Para C e C++;
-  * DataGrip: Para realizar queries em SQL.
+  * DataGrip: Para realizar queries em SQL;
+  * Goland: Para desenvolvimento em Go;
+  * RubyMine: Para desenvolvimento em Ruby;
+  * RustRover: Para desenvolvimento em Rust;
+  * Rider: Para desenvolvimento em .NET e C#, facilmente integrável com Game Engines como Unity, Unreal Engine e Godot.
 ![Hello World em java no Intellij Idea.](./guia-de-ides-imagens/Intellij.png)
 - Entre as características das ferramentas da JetBrains estão:
   * Integração com Git;
