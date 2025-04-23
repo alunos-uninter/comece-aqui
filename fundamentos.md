@@ -278,26 +278,121 @@ determinado contexto cujo cada tipo de dado dentro da itemização possue um
 significado próprio. Porexemplo, podemos definir **StatusDaBomba** como ou um
 intervalo de números inteiros de 1 a 100 que significa tempo restante para
 explodir ou _false_ para denotar que a bomba já explodiu.
+
 * **_Enumerações_**. São os mais usados em designs de algoritmos pois são
-essencialmente um conjunto de valores que representa um contexto. Por exemplo,
-podemos ter uma enumeração chamada **TipoDeCarro** que possue os valores
-_SEDAN_, _SUV_, _ESPORTIVO_, _COUPE_.
+essencialmente um conjunto de valores fixos que representam um contexto. Por
+exemplo, podemos ter uma enumeração chamada **TipoDeCarro** que possue os
+valores _SEDAN_, _SUV_, _ESPORTIVO_, _HOTHATCH_.
 
-Como citado anteriormente, o algoritmo que escrevemos, sua estrutura, depende
-muito do tipo que estamos trabalhando, então vejamos uma série de resolução de
-problemas onde teremos de interagir com estes tipos de dados.
+* **_Estruturas_**. São tipos compostos que podem ser usados para representar
+dados complexos. Por exemplo, podemos ter uma estrutura chamada **Pessoa** que
+possue os campos _nome_, _idade_ e _endereço_. Em Python podemos simplesmente
+utilizar de definição de classes para representar estruturas.
 
-### Itemizações
+* **_Autoreferenciais_**. São tipos recursivos que referem-se a eles mesmos.
+Apesar de serem mais complexos e exigir mais raciocínio, eles são os mais
+adequados para representar estruturas de dados complexas, como árvores, grafos e
+listas encadeadas.
 
-Coming Soon...
+> [!NOTE]
+> Classes e estruturas não são termos intercambiáveis. Classes são elementos
+fundamentais do paradigma de orientação a objetos, enquanto estruturas são
+elementos fundamentais do paradigma de programação estruturada. A principal
+diferença está no fato de que estruturas não possuem comportamentos atribuídos
+e muito menos conceitos fundamentais de POO como atribuição dinâmico de métodos,
+herança e encapsulamento.
 
-### Enumerações: Preço de um tipo de carro
+### Como projetar dados
 
-Coming Soon...
+Haverá momentos em que precisaremos projetar dados que são específicos a um
+contexto, dado que as ferramentas não disponibilizam de uma solução pronta. Note
+que, sempre que possível, utilize os tipos de dados que lhe são disponíveis; não
+reinvente a roda. A receita para o projeto de dados é esta:
+
+1. Analise o objeto principal de interação do algoritmo
+2. Escolha uma organização para o tipo de dado projetado
+3. Documente o tipo de dado projetado
+4. Escreva um template para operar com o tipo de dado customizado
+
+É um receita simples, mas o suficiente para te ajudar a resolver problemas cujo
+contexto é desconhecido ou não é possível utilizar os tipos de dados
+disponíveis.
+
+Digamos que seja necessário elaborar um tipo de dado que represente a situação
+de um foguete. Os cientistas precisam saber quando o foguete ainda está na
+terra, quando estiver voando a uma altura x e quando pousou no chão. Note que no
+problema citado, o contexto do foguete é citado claramente:
+
+* O foguete pode estar na terra
+* O foguete pode estar voando a uma altura x
+* O foguete pode estar pousado no chão
+
+Há três estados, e seria inviável a longo prazo representar este contexto
+utilizando apenas tipos de dados atômicos. Podemos representar o estado do
+foguete então como uma itemização, onde ela agrupa o contexto da seguinte forma:
+
+* **`false`** é usado para representar quando o foguete ainda está na terra
+* **`true`** é usado para representar quando o foguete já pousou no chão
+* **um intervalo de valores inteiros** representam a altura atual do foguete
+
+Temos então uma **itemização**, pois dados de diferentes tipos estão sendo
+usados em conjunto para representar um contexto. Então podemos documentar este
+tipo de dado da seguinte forma:
+
+```python
+"""Rocket é um destes valores
+    False: Quando o foguete ainda está na terra
+    Int: Quando o foguete está voando a uma altura x entre [0, 4000]
+    True: Quando o foguete já pousou no chão
+"""
+```
+
+Nosso tipo de dado está definido, mas algum algoritmo vai interagir com este
+tipo de dado. E um programador pode usar a receita descrita anteriormente para
+projetar um algoritmo trabalhando com este tipo de dado, portanto, precisamos
+definir um template para algoritmos que trabalham com este tipo de dado. Para
+definir um template, vamos definir uma função simples que recebe um valor do
+tipo `Rocket` que contém a estrutura básica para interagir com este dado.
+
+```python
+def rocket_template(rocket):
+    if isinstance(rocket, bool):
+        ...
+    elif isinstance(rocket, int) and 0 <= rocket <= 4000:
+        ...
+    else:
+       # Informe valor inválido
+```
+
+Nas linhas de código acima, descrevemos o template para algoritmos que interagem
+com o tipo `Rocket`, ou seja, uma itemização. O que fazemos na linha acima é uma
+validação da entrada do tipo `Rocket`, dado que diferentes comportamentos são
+esperados para cada caso. A checagem é feita utilizando a função `isinstance`,
+que checa se o tipo do objeto é uma instância de um certo tipo.
 
 ### Como projetar aplicações
 
 Coming Soon...
+
+## Leitura recomendada
+
+A seguir, será recomendado uma série de recursos úteis para aperfeiçoar o
+conhecimento sobre desenvolvimento de algoritmos.
+
+* [**_How to Design Programs_**](htdp-book): Boa parte do material aqui apresentado é
+inspirado em seu conteúdo. O livro detalha conceitos importantes sobre como
+projetar aplicações, algoritmos e estruturas de dados. Ele também disponibiliza
+de pequenos exercícios para praticar os conceitos nele aprendidos. O livro
+utiliza Racket com linguagem principal, mas os problemas podem ser resolvidos
+utilizando de qualquer linguagem.
+
+* [**_Introduction to Algorithms_**](algorithms-book): Este livro é uma
+referência para o desenvolvimento de algoritmos. Ele aborda uma ampla gama de
+algoritmos e estruturas de dados, além de fornecer uma introdução à análise de
+algoritmos. Ele não é facilmente compreensível, dado que ele exige que você
+tenha bons fundamentos matemáticos para analisar os algoritmos apresentados no
+livro.
+
 
 [^1]: [Veja como instalar o interpretador Python na sua máquina](https://www.python.org/downloads/).
 [^2]: Em aplicações do mundo real, você verá que nem todos os dados são
@@ -306,3 +401,6 @@ importante compreender o contexto do problema.
 [^3]: O método preferível em situações real de produção de software é utilizar
 suítes de testes automatizadas, como o
 [`unittest`](https://docs.python.org/3/library/unittest.html) do Python.
+
+[htdp-book]: https://htdp.org/
+[algorithms-book]: https://www.amazon.com.br/Introduction-Algorithms-Fourth-Thomas-Cormen/dp/026204630X?dib=eyJ2IjoiMSJ9.gt_u6EMgNYiUTB3_eV66nHYldHnDsh3VK2_2aYG9RWrfUgoV9Cwg3GXStg93DN8Un75b_HNq13u48saU76Q6cuCHNRh_nATougA73Z-5hZO1cNzl50OFDQ0hYOvql7dlZqi_yPYX-bwPfmFU7ws5Dp7P9my2r3OBEktAU2mFmQjdseaVtytoePkAJPhDvRbgkV8FeG8p1EM7hXm1EhI-B6ri_A7OLmUQN2m5YUoghNdYVRmI6DKXo9JLErpflx7KsBaE0jvpwOuRsV09NbdULIbMeww_x3a2QyRy1LWUwHc.Yup-OoGwFkHYrsyma8bCMmtGyGmF7gMHfEQn3u8_tQw&dib_tag=se&keywords=data+structures+and+algorithms&qid=1745353177&sr=8-2&ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147
