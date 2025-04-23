@@ -18,7 +18,7 @@ Buscamos incentivar a troca de conhecimentos, a aplicação de boas práticas de
 
 ## ⚙️ Estrutura do Projeto
 
-Acesse a [**Lista dos Projetos em Andamento**](https://github.com/alunos-uninter/comece-aqui/blob/main/Projetos.md) ou [**participe das discussões**](https://github.com/orgs/alunos-uninter/discussions).
+Acesse a [**Lista dos Projetos em Andamento**](https://github.com/alunos-uninter/comece-aqui/blob/main/projetos.md) ou [**participe das discussões**](https://github.com/orgs/alunos-uninter/discussions).
 
 ## ✅ Regras de Contribuição
 
@@ -28,7 +28,7 @@ Acesse a [**Lista dos Projetos em Andamento**](https://github.com/alunos-uninter
 
 ## 🔗 Links úteis
 
-- [GitHub Guide: Como criar um Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes)
+- [GitHub Guide: Como criar um Pull Request](https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
 - [Documentação Oficial do Git](https://git-scm.com/doc)
 
 ## 🔎 Contato
