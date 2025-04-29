@@ -379,14 +379,14 @@ Coming Soon...
 A seguir, será recomendado uma série de recursos úteis para aperfeiçoar o
 conhecimento sobre desenvolvimento de algoritmos.
 
-* [**_How to Design Programs_**](htdp-book): Boa parte do material aqui apresentado é
+* [**_How to Design Programs_**][htdp-book]: Boa parte do material aqui apresentado é
 inspirado em seu conteúdo. O livro detalha conceitos importantes sobre como
 projetar aplicações, algoritmos e estruturas de dados. Ele também disponibiliza
 de pequenos exercícios para praticar os conceitos nele aprendidos. O livro
 utiliza Racket com linguagem principal, mas os problemas podem ser resolvidos
 utilizando de qualquer linguagem.
 
-* [**_Introduction to Algorithms_**](algorithms-book): Este livro é uma
+* [**_Introduction to Algorithms_**][algorithms-book]: Este livro é uma
 referência para o desenvolvimento de algoritmos. Ele aborda uma ampla gama de
 algoritmos e estruturas de dados, além de fornecer uma introdução à análise de
 algoritmos. Ele não é facilmente compreensível, dado que ele exige que você
