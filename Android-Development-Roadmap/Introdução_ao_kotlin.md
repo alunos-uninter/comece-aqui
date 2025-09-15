@@ -16,7 +16,7 @@
 * Laços de repetição;
 * Variáveis compostas (Arrays e Listas).
 
-> [!ALERT]
+> [!IMPORTANT]
 > Para que você possa seguir esta trilha, é necessário ter conhecimento de Lógica de Programação. Nosso objetivo aqui não é te ensinar a programar do zero, mas sim habilitá-lo em uma nova linguagem de programação.
 ---
 ## Criando o primeiro projeto no IntelliJ IDEA
